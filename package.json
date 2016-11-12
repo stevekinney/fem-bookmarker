@@ -1,0 +1,28 @@
+{
+  "name": "fem-bookmarker",
+  "version": "1.0.0",
+  "description": "A simple bookmarker application using Electron.",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevekinney/fem-bookmarker.git"
+  },
+  "keywords": [],
+  "author": "Steve Kinney <hello@stevekinney.net> (http://stevekinney.net)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevekinney/fem-bookmarker/issues"
+  },
+  "homepage": "https://github.com/stevekinney/fem-bookmarker#readme",
+  "dependencies": {
+    "electron": "^1.4.6"
+  },
+  "devDependencies": {
+    "devtron": "^1.4.0",
+    "spectron": "^3.4.0"
+  }
+}

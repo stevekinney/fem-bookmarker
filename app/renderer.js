@@ -1,4 +1,5 @@
 const { shell, remote } = require('electron');
+const { systemPreferences } = remote;
 
 const linksSection = document.querySelector('.links');
 const errorMessage = document.querySelector('.message');
@@ -11,6 +12,9 @@ const linkTemplate = document.querySelector('#link-template');
 window.addEventListener('load', () => {
   for (let title of Object.keys(localStorage)) {
     addToPage({ title, url: localStorage.getItem(title) });
+  }
+  if (systemPreferences.isDarkMode()) {
+    document.querySelector('link').href = 'styles-dark.css';
   }
 });
 
